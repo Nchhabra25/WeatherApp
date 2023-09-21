@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="navbar"> 
+    <p class="left">Weather<b>Teller</b></p>
+    <div class="options">
+    <ul id="nav">
+        <li class="navigation"><a href="#">Home</a></li>
+        <li class="navigation"><a href="https://rapidapi.com/apininjas/api/weatder-by-api-ninjas/">API</a></li>
+        <li class="navigation"><a href="#">User Manual</a></li>
+    </ul>
+    </div>
+    </nav>
+    <div class="search">
+    <input id="cityname" type="search" placeholder="Enter City/Country Name">
+    <button id="submit">Search</button>
+    
+    </div>
+    <h1>Weather for <span id="name"></span></h1>
+    <div class="card">
+    <div class="card-1">
+    <div class="images">
+    <img/>
+</div>
+    <p>Temprature: <span id="temp"></span><span id="symbol">&degC</span></p>
+    <p>Feels Like: <span id="feelslike"></span></p>
+    <p>Humidity: <span id="humidity"></span></p>
+    </div>
+    <div class="table">
+    <table>
+        <tr>
+            <td class="head">Cloud PCT</td>
+            <td class="data" id="cloud_pct"></td>
+        </tr>
+        <tr>
+            <td class="head">Sunrise Time</td>
+            <td class="data" id="Sunrise"></td>
+        </tr>
+        <tr>
+            <td class="head">Sunset Time</td>
+            <td class="data" id="sunset"></td>
+        </tr>
+        <tr>
+            <td class="head">Wind Degrees</td>
+            <td class="data"><span id="winddeg"></span>&degC</td>
+        </tr>
+        <tr>
+            <td class="head">Wind Speed</td>
+            <td class="data" id="windspeed"></td>
+        </tr>
+    </table>
+</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

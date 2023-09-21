@@ -1,0 +1,146 @@
+body{
+    background: linear-gradient(105.7deg, rgb(188, 252, 136) 23.2%, rgb(163, 186, 255) 100.5%);
+}
+/*navbar*/
+nav{
+    position: relative;
+    background-color: powderblue;
+}
+#navbar{
+    position: relative;
+    display: flex;
+    text-align: right;
+    /*border:2px solid red;*/
+    display:flex;
+    justify-content:flex-end;
+    height: 65px;
+}
+
+.left {
+    margin-right:auto;
+    padding-left: 5px;
+    font-size: 35px;
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+ul{
+    display: flex;
+    list-style: none;
+}
+#navbar ul li{
+    font-size: 1.5rem;
+}
+#navbar ul li a{
+    text-decoration: none;
+    padding:8px;
+    color:black;
+    font-weight: bold;
+}
+#navbar ul li a:hover {
+text-decoration: underline;
+font-style: italic;
+border-radius: 10px;
+color: aliceblue;
+}
+/*body*/
+.search{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+input{
+    margin: 25px;
+    width: 25vw;
+    height: 7vh;
+    border-radius: 20px;
+    border: 2px solid blue;
+    background-color: rgb(205, 253, 255);
+    font-size: 25px;
+}
+button{
+    height: 6vh;
+    width: 10%;
+    border-radius: 5px;
+    border: 2px solid lightblue;
+    background-color: aliceblue;
+    box-shadow: 2px 2px lightblue inset;
+    font-size: 20px;
+    font-weight: bold ;
+}
+button:hover{
+    color: rgb(29, 26, 26);
+    background-color: lightblue;
+    cursor: pointer;
+}
+h1{
+    text-decoration: underline;
+}
+.card{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card-1{
+    border: 2px solid lightblue;
+    position: relative;
+    width: 30%;
+    margin: 10px;
+    height: 33vh;
+    background: linear-gradient(105.7deg, rgb(0, 238, 179) 23.2%, rgb(49, 100, 255) 100.5%);
+}
+#symbol{
+    font-size: 20px;
+}
+.card-1 p{
+    font-weight: bold;
+    font-size: 20px;
+    margin: 10px;
+}
+.card-1:hover{
+    transition: 0.5s ease-out;
+    transform: scale(1.1);
+    box-shadow: 2px 2px blue ;
+}
+img{
+    margin-top: 5px;
+    height: 80px;
+    width: 90px;
+}
+.table{
+    text-align: center;
+    margin-top: 18px;
+}
+table{
+    border: 2px solid lightskyblue;
+    border-radius: 5px;
+    border-collapse:collapse ;
+    background-color: aliceblue;
+    text-align: left;
+    width: 30vw;
+}
+td{
+    border: 2px solid lightskyblue;
+}
+.head{
+    font-weight: bold;
+}
+h1{
+    text-align: center;
+}
+@media  (max-width:800px){
+    #nav{
+        display: none;
+    }
+    .card-1{
+        width: 80%;
+    }
+    .search{
+        flex-direction: column;
+    }
+    button{
+        width: 20%;
+    }
+}
